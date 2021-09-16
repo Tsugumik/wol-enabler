@@ -1,0 +1,11 @@
+[Unit]
+Description=Wake-on-LAN enabler
+Requires=network.target
+After=network.target
+
+[Service]
+ExecStart=/bin/wolenabler.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
