@@ -6,7 +6,6 @@ After=network.target
 [Service]
 User=root
 ExecStart=/usr/bin/wolenabler.sh
-Type=oneshot
 
 [Install]
 WantedBy=multi-user.target
