@@ -7,7 +7,7 @@ do
                 interfaces+=("$iface")
         fi
 done
-for iface in "${$interfaces[@]}"
+for iface in "${interfaces[@]}"
 do
        sudo /sbin/ethtool -s $iface wol g
 done
