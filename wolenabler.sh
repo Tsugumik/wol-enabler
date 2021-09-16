@@ -9,5 +9,5 @@ do
 done
 for iface in "{$interfaces[@]}"
 do
-        /sbin/ethtool -s $iface wol g
+       sudo /sbin/ethtool -s $iface wol g
 done
