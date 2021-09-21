@@ -1,7 +1,7 @@
 [Unit]
 Description=Wake-on-LAN enabler
-Requires=network.target
-After=network.target
+Wants=network-online.target
+After=network.target network-online.target
 
 [Service]
 Required-Start: $all
